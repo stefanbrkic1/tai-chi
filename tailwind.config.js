@@ -9,6 +9,10 @@ export default {
         tsushima: ["Tsushima", "sans-serif"],
         drukwide: ["DrukWideBold", "sans-serif"],
       },
+      colors: {
+        primary: "#ED4747",
+        secondary: "#2D2D2D",
+      },
     },
   },
   plugins: [],
