@@ -1,5 +1,5 @@
 function LandingPage() {
-  return <div>LandingPage</div>;
+  return <div className="font-drukwide">HOME ABOUT US</div>;
 }
 
 export default LandingPage;
