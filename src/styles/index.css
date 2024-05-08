@@ -71,9 +71,14 @@
     background: rgba(0, 0, 0, 0.2392156863);
   }
 
-  .animate-slide {
+  .animate-slide-left {
     display: inline-block;
-    animation: 80s slide infinite linear;
+    animation: 110s slide-left infinite linear;
+  }
+
+  .animate-slide-right {
+    display: inline-block;
+    animation: 310s slide-right infinite linear;
   }
 
   .cloud {
@@ -81,6 +86,10 @@
     opacity: 0.7;
     -webkit-filter: brightness(0.9);
     filter: brightness(0.9);
+  }
+
+  .fade-opacity {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   }
 }
 
@@ -91,11 +100,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes slide {
+@keyframes slide-left {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-360%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-360%);
+  }
+  to {
+    transform: translateX(360%);
   }
 }
