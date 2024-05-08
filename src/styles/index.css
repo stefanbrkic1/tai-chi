@@ -4,26 +4,72 @@
 
 @font-face {
   font-family: "Generalsans";
-  src: url("../assets/fonts/GeneralSans/GeneralSans-Regular.woff2")
+  src: url("/assets/fonts/GeneralSans/GeneralSans-Regular.woff2")
     format("woff2");
-  src: url("../assets/fonts/GeneralSans/GeneralSans-Regular.woff")
-    format("woff");
+  src: url("/assets/fonts/GeneralSans/GeneralSans-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Generalsans";
+  src: url("/assets/fonts/GeneralSans/GeneralSans-Medium.woff2") format("woff2"),
+    url("/assets/fonts/GeneralSans/GeneralSans-Medium.woff") format("woff");
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("../assets/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
-  src: url("../assets/fonts/Satoshi/Satoshi-Bold.woff") format("woff");
+  src: url("/assets/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/Satoshi/Satoshi-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Tsushima";
-  src: url("../assets/fonts/Tsushima/Tsushima.otf");
+  src: url("/assets/fonts/Tsushima/Tsushima.otf");
 }
 
 @font-face {
   font-family: "DrukWideBold";
-  src: url("../assets/fonts/DrukWideBold/DrukWideBold.woff") format("woff");
+  src: url("/assets/fonts/DrukWideBold/DrukWideBold.woff") format("woff");
+}
+
+@layer utilities {
+  .container {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  .fade-border-bottom-right {
+    border-bottom: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, transparent, #e6e6e6);
+    border-image-slice: 1;
+  }
+
+  .fade-border-bottom-left {
+    border-bottom: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to left, transparent, #e6e6e6);
+    border-image-slice: 1;
+  }
+
+  .fade-border-left {
+    border-left: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, transparent, #e6e6e6);
+    border-image-slice: 1;
+  }
+
+  .fade-border-right {
+    border-right: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, transparent, #e6e6e6);
+    border-image-slice: 1;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.2392156863);
+  }
 }
 
 :root {

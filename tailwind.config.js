@@ -14,6 +14,7 @@ export default {
         secondary: "#2D2D2D",
         white: "#ffffff",
         black: "#252525",
+        transparent: "transparent",
       },
     },
   },

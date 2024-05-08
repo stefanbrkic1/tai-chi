@@ -1,0 +1,327 @@
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+function Navbar() {
+  const location = useLocation();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  function openSidebar() {
+    setIsSidebarOpen(true);
+    document.body.classList.add("overflow-hidden");
+  }
+
+  function closeSidebar() {
+    setIsSidebarOpen(false);
+    document.body.classList.remove("overflow-hidden");
+  }
+
+  // Close sidebar if window is resized above 1024px
+  useEffect(() => {
+    const handleSidebarOnResize = () => {
+      if (window.innerWidth > 1024) {
+        setIsSidebarOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleSidebarOnResize);
+
+    return () => window.removeEventListener("resize", handleSidebarOnResize);
+  }, []);
+
+  return (
+    <>
+      <div className="bg-primary text-center font-satoshi text-[10px] sm:text-[12px] text-white py-[7px]">
+        GET OUR BEST DEALS ON THIS LUNAR YEAR{" "}
+        <span className="text-black">30% FLAT OFF</span>
+      </div>
+
+      <nav className="hidden lg:block lg:fixed w-full font-generalsans text-[14px] text-secondary z-40">
+        <div className="container px-[3%] flex items-stretch justify-between">
+          <ul className="flex items-center flex-1 justify-start gap-[40px] xl:gap-[60px] fade-border-bottom-right fade-border-bottom">
+            <Link
+              to={"/"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              HOME
+            </Link>
+            <Link
+              to={"/about"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/about"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              ABOUT US
+            </Link>
+            <Link
+              to={"/programs"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/programs"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              PROGRAMS
+            </Link>
+            <Link
+              to={"/pricing"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/pricing"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              PRICING
+            </Link>
+          </ul>
+          <div className="pt-[19px] pb-[20px] fade-border-left fade-border-right">
+            <div className="lg:px-[35px] xl:px-[55px] 2xl:px-[65px]">
+              <Link to={"/"}>
+                <img
+                  src="/assets/style-elements/logo.svg"
+                  alt="logo"
+                  width="119"
+                  height="21"
+                />
+              </Link>
+            </div>
+          </div>
+          <ul className="flex items-center flex-1 justify-end gap-[40px] xl:gap-[60px] fade-border-bottom-left">
+            <Link
+              to={"/gallery"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/gallery"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              GALLERY
+            </Link>
+
+            <div className="group transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] hover:after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 hover:text-primary hover:after:w-[130px] cursor-pointer z-10">
+              PAGES
+              <span>
+                <img
+                  src="assets/style-elements/dropdown.webp"
+                  alt="dropdown icon"
+                  width="12"
+                  height="6"
+                  className="ml-[6px]"
+                />
+              </span>
+              <div className="text-secondary top-[60px] w-[130px] h-[0px] overflow-hidden group-hover:h-[75px] absolute bg-white flex flex-col transition-[height] duration-500 shadow-md">
+                <Link to={"/coming-soon"} className="hover:text-primary m-2">
+                  COMING SOON
+                </Link>
+                <Link to={"/*"} className="hover:text-primary m-2">
+                  404 PAGE
+                </Link>
+              </div>
+            </div>
+
+            <Link
+              to={"/blog"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/blog"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              BLOG
+            </Link>
+            <Link
+              to={"/contact"}
+              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
+                location.pathname === "/contact"
+                  ? "text-primary after:w-[22px]"
+                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
+              }`}
+            >
+              CONTACT US
+            </Link>
+          </ul>
+        </div>
+      </nav>
+
+      <nav className="lg:hidden flex items-center justify-between py-[12px] mx-[12px] sm:py-[20px] sm:mx-[5%]">
+        <Link to={"/"}>
+          <img
+            src="/assets/style-elements/logo.svg"
+            alt="logo"
+            width="119"
+            height="21"
+          />
+        </Link>
+
+        <button
+          onClick={openSidebar}
+          className="w-[47px] p-2 flex flex-col items-end"
+        >
+          <div className="w-[60%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
+          <div className="w-[80%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
+          <div className="w-full h-[3px] bg-primary rounded-2xl"></div>
+        </button>
+
+        <div
+          className={`font-generalsans top-0 right-0 font-bold bg-white fixed z-50 h-screen w-[270px] sm:w-[300px] p-5 flex flex-col transition-all duration-500 ${
+            isSidebarOpen ? "translate-x-[0px]" : "translate-x-[120%]"
+          }`}
+        >
+          <div className="flex items-center justify-between">
+            <Link to={"/"}>
+              <img
+                src="/assets/style-elements/logo.svg"
+                alt="logo"
+                width="119"
+                height="21"
+              />
+            </Link>
+            <button
+              onClick={closeSidebar}
+              style={{
+                backgroundImage: "url(/assets/style-elements/xmark-solid.svg)",
+              }}
+              className="w-[30px] h-[30px] bg-center bg-no-repeat bg-contain"
+            ></button>
+          </div>
+          <div className="flex-1 flex items-center">
+            <div className="w-full flex flex-col gap-[20px]">
+              <div>
+                <Link
+                  to={"/"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  HOME
+                </Link>
+              </div>
+
+              <div>
+                <Link
+                  to={"/about"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/about"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  ABOUT US
+                </Link>
+              </div>
+
+              <div>
+                <Link
+                  to={"/programs"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/programs"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  PROGRAMS
+                </Link>
+              </div>
+
+              <div>
+                <Link
+                  to={"/pricing"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/pricing"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  PRICING
+                </Link>
+              </div>
+
+              <div>
+                <Link
+                  to={"/gallery"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/gallery"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  GALLERY
+                </Link>
+              </div>
+
+              <div className="group transition-all duration-500 relative h-full hover:text-primary cursor-pointer flex flex-col">
+                <div className="flex items-center">
+                  PAGES
+                  <span>
+                    <img
+                      src="assets/style-elements/dropdown.webp"
+                      alt="dropdown icon"
+                      width="12"
+                      height="6"
+                      className="ml-2"
+                    />
+                  </span>
+                </div>
+                <div className="transition-[height] duration-500 h-[0px] overflow-hidden group-hover:h-[107px] flex items-center">
+                  <div className="text-secondary w-full h-[0px] overflow-hidden group-hover:h-[80px] bg-white flex flex-col transition-all duration-500 shadow-md border-t-2 group-hover: border-primary">
+                    <Link
+                      to={"/coming-soon"}
+                      className="hover:text-primary m-2"
+                    >
+                      COMING SOON
+                    </Link>
+                    <Link to={"/*"} className="hover:text-primary m-2">
+                      404 PAGE
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <Link
+                  to={"/blog"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/blog"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  BLOG
+                </Link>
+              </div>
+
+              <div>
+                <Link
+                  to={"/contact"}
+                  className={`transition-all duration-300 ${
+                    location.pathname === "/contact"
+                      ? "text-primary"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  CONTACT US
+                </Link>
+              </div>
+            </div>
+          </div>
+          <img
+            src="/assets/style-elements/cutted-border-2.webp"
+            alt="styling-element"
+            className="absolute left-[-35px] top-[-40px]"
+          />
+        </div>
+        {isSidebarOpen && (
+          <div className="overlay fixed w-full h-full bg-black z-40 top-0 left-0"></div>
+        )}
+      </nav>
+    </>
+  );
+}
+
+export default Navbar;
