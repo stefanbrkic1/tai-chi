@@ -70,6 +70,18 @@
   .overlay {
     background: rgba(0, 0, 0, 0.2392156863);
   }
+
+  .animate-slide {
+    display: inline-block;
+    animation: 80s slide infinite linear;
+  }
+
+  .cloud {
+    pointer-events: none;
+    opacity: 0.7;
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+  }
 }
 
 :root {
@@ -77,4 +89,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-360%);
+  }
 }

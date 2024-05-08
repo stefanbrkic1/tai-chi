@@ -29,12 +29,12 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-primary text-center font-satoshi text-[10px] sm:text-[12px] text-white py-[7px]">
+      <div className="relative bg-primary text-center font-satoshi text-[10px] sm:text-[12px] text-white py-[7px] sm:py-[6px] z-40">
         GET OUR BEST DEALS ON THIS LUNAR YEAR{" "}
         <span className="text-black">30% FLAT OFF</span>
       </div>
 
-      <nav className="hidden lg:block lg:fixed w-full font-generalsans text-[14px] text-secondary z-40">
+      <nav className="hidden lg:block lg:absolute w-full font-generalsans text-[14px] text-secondary z-40">
         <div className="container px-[3%] flex items-stretch justify-between">
           <ul className="flex items-center flex-1 justify-start gap-[40px] xl:gap-[60px] fade-border-bottom-right fade-border-bottom">
             <Link
@@ -147,7 +147,7 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav className="lg:hidden flex items-center justify-between py-[12px] mx-[12px] sm:py-[20px] sm:mx-[5%]">
+      <nav className="relative lg:hidden flex items-center justify-between py-[12px] mx-[12px] sm:py-[20px] sm:mx-[5%] z-40">
         <Link to={"/"}>
           <img
             src="/assets/style-elements/logo.svg"
