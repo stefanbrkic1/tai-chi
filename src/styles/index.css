@@ -76,11 +76,6 @@
     animation: 110s slide-left infinite linear;
   }
 
-  .animate-slide-right {
-    display: inline-block;
-    animation: 310s slide-right infinite linear;
-  }
-
   .cloud {
     pointer-events: none;
     opacity: 0.7;
@@ -106,14 +101,5 @@
   }
   to {
     transform: translateX(-360%);
-  }
-}
-
-@keyframes slide-right {
-  from {
-    transform: translateX(-360%);
-  }
-  to {
-    transform: translateX(360%);
   }
 }
