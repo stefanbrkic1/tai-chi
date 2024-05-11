@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -12,7 +13,7 @@ function LandingPage() {
           className="relative z-10"
         />
 
-        <div className="overflow-hidden absolute top-[-5px] whitespace-nowrap z-0">
+        <div className="overflow-hidden fixed top-[-5px] whitespace-nowrap z-0">
           <span className="relative inline-block">
             <img
               src="/assets/style-elements/mountains.webp"
@@ -115,6 +116,17 @@ function LandingPage() {
               最好的
             </div>
           </div>
+
+          <Link to={"/programs"}>
+            <img
+              src="/assets/style-elements/btn.svg"
+              alt="button"
+              className="fixed left-[350px] z-10 animate-rotate max-[767px]:bottom-[-320px] max-[991px]:bottom-[10px] max-[991px]:left-[200px] max-[1199px]:bottom-[30px] max-[1199px]:left-[270px] min-[1200px]:bottom-[55px] min-[1400px]:bottom-[55px] max-[1399px]:w-[110px] max-[1399px]:h-[110px] min-[1400px]:w-[148px] min-[1400px]:h-[148px]"
+            />
+            <div className="flex justify-center items-center fixed left-[350px] w-[148px] h-[148px] z-10 text-white font-satoshi max-[767px]:bottom-[-320px] max-[991px]:bottom-[10px] max-[991px]:left-[200px] max-[1199px]:bottom-[30px] max-[1199px]:left-[270px] min-[1200px]:bottom-[55px] min-[1400px]:bottom-[55px] max-[1399px]:w-[110px] max-[1399px]:h-[110px] max-[1399px]:text-[13px]">
+              GET STARTED
+            </div>
+          </Link>
         </div>
       </section>
     </>

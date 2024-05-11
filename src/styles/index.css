@@ -118,9 +118,11 @@
   .animate-scale-pulse-2 {
     animation: 5s scale-pulse infinite 0.5s;
   }
+
   .animate-meditate {
     animation: 5s meditate infinite;
   }
+
   .stroke-header {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #2d2d2d;
@@ -129,6 +131,10 @@
   .upright-text {
     writing-mode: vertical-rl;
     text-orientation: upright;
+  }
+
+  .animate-rotate {
+    animation: 5s rotate infinite linear;
   }
 }
 
@@ -172,6 +178,15 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
