@@ -125,6 +125,11 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #2d2d2d;
   }
+
+  .upright-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
 }
 
 :root {

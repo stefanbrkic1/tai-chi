@@ -77,7 +77,7 @@ function LandingPage() {
           </span>
         </div>
 
-        <div className="absolute w-full top-[260px] md:top-[180px] min-[1200px]:top-[200px] min-[1400px]:top-[280px] left-[50%] translate-x-[-50%] translate-y-[-1%] z-20 flex justify-center">
+        <div className="container absolute w-full top-[260px] md:top-[180px] min-[1200px]:top-[200px] min-[1400px]:top-[280px] left-[50%] translate-x-[-50%] translate-y-[-1%] z-20 flex justify-center">
           <div className="relative w-[310px] h-[310px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full">
             <div className="top-0 left-0 absolute w-[310px] h-[310px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-1 "></div>
             <div className="top-0 left-0 absolute w-[310px] h-[310px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-2 "></div>
@@ -104,9 +104,17 @@ function LandingPage() {
               </h2>
             </div>
           </div>
-          <h1 className="absolute min-[768px]:top-[47px] min-[992px]:top-[73px] min-[1200px]:top-[63px] min-[1400px]:top-[80px] font-drukwide text-[34px] min-[576px]:text-[46px] min-[768px]:text-[84px] min-[992px]:text-[113px] min-[1200px]:text-[134px] min-[1400px]:text-[156px] min-[767px]:stroke-header text-transparent z-20">
+          <h1 className="absolute min-[767px]:top-[47px] min-[992px]:top-[73px] min-[1200px]:top-[63px] min-[1400px]:top-[80px] font-drukwide text-[34px] min-[576px]:text-[46px] min-[768px]:text-[84px] min-[992px]:text-[113px] min-[1200px]:text-[134px] min-[1400px]:text-[156px] min-[767px]:stroke-header text-transparent z-20">
             DISCIPLINE
           </h1>
+          <div className="upright-text max-[767px]:hidden max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] leading-[35px]">
+            <div className="absolute left-0 text-secondary max-[991px]:top-[-60px] max-[1199px]:top-[-50px] min-[1200px]:top-[-70px] min-[1400px]:top-[-140px]">
+              我是
+            </div>
+            <div className="absolute bottom-[-50px] right-0 text-primary max-[991px]:bottom-[-60px] max-[1199px]:bottom-[-50px] min-[1200px]:bottom-[-70px] min-[1400px]:bottom-[-140px]">
+              最好的
+            </div>
+          </div>
         </div>
       </section>
     </>
