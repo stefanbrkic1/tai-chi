@@ -34,9 +34,9 @@ function Navbar() {
         <span className="text-black">30% FLAT OFF</span>
       </div>
 
-      <nav className="hidden lg:block lg:absolute w-full font-generalsans text-[14px] text-secondary z-40">
-        <div className="container px-[3%] flex items-stretch justify-between">
-          <ul className="flex items-center flex-1 justify-start gap-[40px] xl:gap-[60px] fade-border-bottom-right fade-border-bottom">
+      <nav className="hidden min-[993px]:block min-[993px]:absolute w-full font-generalsans text-[14px] text-secondary z-40">
+        <div className="container flex items-stretch justify-between">
+          <ul className="flex items-center flex-1 justify-start max-[1199px]:gap-[30px] max-[1400px]:gap-[40px] min-[1401px]:gap-[60px] fade-border-bottom-right fade-border-bottom">
             <Link
               to={"/"}
               className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
@@ -79,7 +79,7 @@ function Navbar() {
             </Link>
           </ul>
           <div className="pt-[19px] pb-[20px] fade-border-left fade-border-right">
-            <div className="lg:px-[35px] xl:px-[55px] 2xl:px-[65px]">
+            <div className="min-[993px]:px-[35px] xl:px-[55px] 2xl:px-[65px]">
               <Link to={"/"}>
                 <img
                   src="/assets/style-elements/logo.svg"
@@ -90,7 +90,7 @@ function Navbar() {
               </Link>
             </div>
           </div>
-          <ul className="flex items-center flex-1 justify-end gap-[40px] xl:gap-[60px] fade-border-bottom-left">
+          <ul className="flex items-center flex-1 justify-end max-[1200px]:gap-[30px] max-[1400px]:gap-[40px] min-[1401px]:gap-[60px] fade-border-bottom-left">
             <Link
               to={"/gallery"}
               className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
@@ -147,24 +147,26 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav className="relative lg:hidden flex items-center justify-between py-[12px] mx-[12px] sm:py-[20px] sm:mx-[5%] z-40">
-        <Link to={"/"}>
-          <img
-            src="/assets/style-elements/logo.svg"
-            alt="logo"
-            width="119"
-            height="21"
-          />
-        </Link>
+      <nav className="relative min-[992px]:hidden p-[12px] z-40">
+        <div className="container flex items-center justify-between">
+          <Link to={"/"}>
+            <img
+              src="/assets/style-elements/logo.svg"
+              alt="logo"
+              width="119"
+              height="21"
+            />
+          </Link>
 
-        <button
-          onClick={openSidebar}
-          className="w-[47px] p-2 flex flex-col items-end"
-        >
-          <div className="w-[60%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
-          <div className="w-[80%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
-          <div className="w-full h-[3px] bg-primary rounded-2xl"></div>
-        </button>
+          <button
+            onClick={openSidebar}
+            className="w-[47px] p-2 flex flex-col items-end"
+          >
+            <div className="w-[60%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
+            <div className="w-[80%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
+            <div className="w-full h-[3px] bg-primary rounded-2xl"></div>
+          </button>
+        </div>
 
         <div
           className={`font-generalsans top-0 right-0 font-bold bg-white fixed z-50 h-screen w-[270px] sm:w-[300px] p-5 flex flex-col transition-all duration-500 ${
