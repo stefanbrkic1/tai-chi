@@ -105,7 +105,7 @@ function LandingPage() {
               </h2>
             </div>
           </div>
-          <h1 className="absolute min-[767px]:top-[47px] min-[992px]:top-[73px] min-[1200px]:top-[63px] min-[1400px]:top-[80px] font-drukwide text-[34px] min-[576px]:text-[46px] min-[768px]:text-[84px] min-[992px]:text-[113px] min-[1200px]:text-[134px] min-[1400px]:text-[156px] min-[767px]:stroke-header text-transparent z-20">
+          <h1 className="absolute min-[768px]:top-[47px] min-[992px]:top-[73px] min-[1200px]:top-[63px] min-[1400px]:top-[80px] font-drukwide text-[34px] min-[576px]:text-[46px] min-[768px]:text-[84px] min-[992px]:text-[113px] min-[1200px]:text-[134px] min-[1400px]:text-[156px] min-[768px]:stroke-header text-transparent z-20">
             DISCIPLINE
           </h1>
           <div className="upright-text max-[767px]:hidden max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] leading-[35px]">
@@ -117,7 +117,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <Link to={"/programs"}>
+          <Link to={"/programs"} className="max-[767px]:hidden">
             <img
               src="/assets/style-elements/btn.svg"
               alt="button"
