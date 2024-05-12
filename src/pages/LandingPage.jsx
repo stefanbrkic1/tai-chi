@@ -10,18 +10,16 @@ function LandingPage() {
         <img
           src="/assets/style-elements/header-bg-1.webp"
           alt="style-image"
-          className="relative z-10"
+          className="absolute top-0 left-0"
         />
 
-        <div className="overflow-hidden fixed top-[-5px] whitespace-nowrap z-0">
-          <span className="relative inline-block">
-            <img
-              src="/assets/style-elements/mountains.webp"
-              alt="mountain"
-              className="w-full inline-block"
-            />
-            <div className="absolute w-full h-full fade-opacity top-0 left-0"></div>
-          </span>
+        <div className="absolute top-[-5px]">
+          <img
+            src="/assets/style-elements/mountains.webp"
+            alt="mountain"
+            className=""
+          />
+          <div className="absolute w-full h-full fade-opacity top-0 left-0"></div>
         </div>
 
         <div className="overflow-hidden absolute top-[-10px] whitespace-nowrap">
@@ -129,6 +127,75 @@ function LandingPage() {
           </Link>
         </div>
       </section>
+
+      <section className="overflow-hidden relative bg-white mt-[660px] min-[576px]:mt-[660px] min-[768px]:mt-[510px] min-[992px]:mt-[660px] min-[1200px]:mt-[760px] min-[1400px]:mt-[1060px]">
+        <div className="relative container max-[575px]:px-[12px]">
+          <div className="absolute top-[40px] text-primary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] leading-[35px]">
+            不屈
+          </div>
+          <div className="flex justify-center mb-4 pt-[40px]">
+            <img
+              src="/assets/style-elements/star.svg"
+              alt="star"
+              className="opacity-[20%] animate-rotate"
+            />
+          </div>
+          <h2 className="font-tsushima text-secondary text-center text-[24px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[10px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
+            WHO <span className="text-primary">WE ARE</span>
+          </h2>
+          <div className="text-center font-generalsans text-secondary max-[575px]:text-[14px] max-[767px]:text-[15px] min-[768px]:text-[16px] flex flex-col max-[991px]:gap-[15px] min-[992px]:gap-[20px] mb-[30px]">
+            <p>
+              We embody the essence of Tai Chi in our daily lives and strive to
+              inspire others to embark on their own journey of self-discovery
+              and well-being. With years of experience and a deep understanding
+              of the art, we are committed to providing high-quality instruction
+              and resources to individuals of all ages
+            </p>
+            <p>
+              Our mission is to crfestival u novembrueate a supportive and
+              inclusive community where practitioners can cultivate balance,
+              harmony, and inner peace through the practice of Tai Chi. We
+              believe in the power of mindful movement, breath, and meditation
+              to enhance physical health, mental clarity, and emotional
+              well-being. Whether you are a beginner or an experienced
+              practitioner, our website offers a wealth of information,
+              instructional videos, and resources to help you deepen your
+              practice and unlock the transformative potential of Tai Chi.
+            </p>
+            <p>
+              Join us on this incredible journey of self-discovery and let the
+              beauty of Tai Chi enrich your life. Together, we can cultivate a
+              harmonious and balanced existence, both on and off the practice
+              mat. Explore our website, connect with our community, and embark
+              on a path of holistic well-being with us.
+            </p>
+          </div>
+          <div className="absolute right-0 z-10 text-secondary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] max-[991px]:hidden min-[992px]:bottom-[-250px] max-[1199px]:bottom-[-250px] min-[1200px]:bottom-[-300px] min-[1400px]:bottom-[-400px] leading-[35px]">
+            持不
+          </div>
+        </div>
+
+        <div className="relative bg-[url('/assets/style-elements/who-we-are.webp')] bg-cover bg-no-repeat flex justify-center max-[767px]:items-end max-[991px]:items-center min-[992px]:items-end min-[768px]:h-[400px] h-300px] min-[992px]:h-[400px] min-[1200px]:h-[500px] min-[1400px]:h-[600px] min-[1700px]:h-[700px] min-[2000px]:h-[800px] min-[2300px]:h-[900px]">
+          <div className="relative w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full">
+            <div className="top-0 left-0 absolute w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-1 "></div>
+            <div className="top-0 left-0 absolute w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-2 "></div>
+          </div>
+          <div className="absolute z-20 bg-[url('/assets/img/who-we-are.webp')] bg-no-repeat bg-center w-full h-full bottom-[0px] max-[767px]:bg-contain min-[768px]:bg-contain min-[992px]:bg-cover min-[1200px]:bg-cover min-[1400px]:bg-cover"></div>
+          <div className="absolute bottom-[-20px] w-full h-[60px] bg-white"></div>
+          <img
+            src="/assets/style-elements/star.svg"
+            alt="star"
+            className="absolute z-10 top-[-30px] right-[-65px] opacity-[20%] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+          />
+          <img
+            src="/assets/style-elements/star.svg"
+            alt="star"
+            className="absolute z-10 left-[-65px] bottom-[90px] min-[768px]:bottom-[170px] opacity-[20%] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+          />
+        </div>
+      </section>
+
+      <section className="relative h-screen bg-white"></section>
     </>
   );
 }
