@@ -180,8 +180,15 @@ function LandingPage() {
             <div className="top-0 left-0 absolute w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-1 "></div>
             <div className="top-0 left-0 absolute w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-2 "></div>
           </div>
-          <div className="absolute z-20 bg-[url('/assets/img/who-we-are.webp')] bg-no-repeat bg-center w-full h-full bottom-[0px] max-[767px]:bg-contain min-[768px]:bg-contain min-[992px]:bg-cover min-[1200px]:bg-cover min-[1400px]:bg-cover"></div>
+          <div className="absolute z-20 bg-[url('/assets/img/who-we-are.webp')] bg-no-repeat bg-center w-full h-full bottom-[0px] max-[767px]:bg-contain min-[768px]:bg-contain min-[992px]:bg-cover min-[1200px]:bg-cover min-[1400px]:bg-cover">
+            <img
+              src="/assets/style-elements/cutted-border.webp"
+              alt=""
+              className="absolute max-[575px]:bottom-[0px] max-[614px]:bottom-[10px] max-[678px]:h-[40px] max-[700px]:bottom-[5px] max-[767px]:bottom-[0px] max-[810px]:bottom-[38px] max-[877px]:bottom-[25px] max-[938px]:bottom-[10px] min-[939px]:bottom-[0px] z-20 w-full"
+            />
+          </div>
           <div className="absolute bottom-[-20px] w-full h-[60px] bg-white"></div>
+
           <img
             src="/assets/style-elements/star.svg"
             alt="star"
