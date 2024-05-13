@@ -202,7 +202,91 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="relative h-screen bg-white"></section>
+      <div className="relative ">
+        <section className="relative container bg-white pt-[7%]">
+          <div className="relative z-10 flex items-center max-[767px]:flex-col-reverse min-[768px]:flex-row max-[767px]:gap-[30px] min-[768px]:gap-[60px]">
+            <div className="flex-1 max-[575px]:px-5 relative min-[576px]:px-[90px] min-[768px]:px-[0px]">
+              <img
+                src="/assets/img/basic-transformation.webp"
+                alt="basic"
+                className=""
+              />
+              <div className="absolute top-0 z-10 text-secondary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] min-[992px]:bottom-[-250px] max-[1199px]:bottom-[-250px] min-[1200px]:bottom-[-300px] min-[1400px]:bottom-[-400px] leading-[35px]">
+                信念
+              </div>
+            </div>
+            <div className="flex-1 min-[768px]:flex-[1.5] min-[992px]:flex-1">
+              <h3 className="font-tsushima flex justify-center gap-3 min-[768px]:flex-col min-[768px]:gap-0 text-primary text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
+                FROM <div className="text-secondary">BASIC</div>
+              </h3>
+              <div className="font-generalsans max-[767px]:text-center">
+                <p className="max-[991px]:mb-[15px] min-[992px]:mb-[20px]">
+                  Tellus viverra donec scelerisque vivamus ipsum proin nisl in.
+                  Diam duis ullamcorper tempor eget. Duis donec id est facilisi
+                  nullam id praesent rhoncus est. Auctor sed ornare quis porta
+                  blandit egestas a. Massa tincidunt cursus nisi varius.
+                </p>
+                <p>
+                  Adipiscing id nunc consequat in. Bibendum sed aliquam est non
+                  id dignissim et aliquet. Tellus nam integer nunc mauris velit
+                  etiam enim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <img
+          src="/assets/img/transformation-1.webp"
+          alt="style-img"
+          className="absolute max-w-[1600px] mx-auto w-full max-[575px]:top-[660px] max-[767px]:top-[470px] max-[991px]:top-[220px] max-[1199px]:top-[360px] max-[1399px]:top-[360px] min-[1400px]:top-[360px]"
+        />
+        <h2 className="absolute w-full top-[115%] font-drukwide text-center max-[575px]:text-[20px] max-[767px]:text-[34px] max-[991px]:text-[49px] max-[1199px]:text-[66px] max-[1399px]:text-[78px] min-[1400px]:text-[95px]">
+          <span>TRANSF</span>
+          <img
+            src="/assets/style-elements/transformation.svg"
+            alt="Transformation icon"
+            className="inline-block animate-rotate"
+          />
+          <span>RMATION</span>
+        </h2>
+      </div>
+      <div className="container overflow-hidden relative">
+        <div className="relative z-10 flex items-center max-[767px]:flex-col-reverse min-[768px]:flex-row max-[767px]:gap-[30px] min-[768px]:gap-[60px] max-[575px]:pt-[55%] max-[767px]:pt-[46%] max-[991px]:pt-[30%] max-[1199px]:pt-[25%] max-[1399px]:pt-[23%] min-[1400px]:pt-[28%]">
+          <div className="flex-1 min-[768px]:flex-[1.5] min-[992px]:flex-1">
+            <h3 className="font-tsushima flex justify-center gap-3 min-[768px]:flex-col min-[768px]:gap-0 text-primary text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
+              TO <div className="text-secondary">PROFESSIONAL</div>
+            </h3>
+            <div className="font-generalsans max-[767px]:text-center">
+              <p className="max-[991px]:mb-[15px] min-[992px]:mb-[20px]">
+                Tellus viverra donec scelerisque vivamus ipsum proin nisl in.
+                Diam duis ullamcorper tempor eget. Duis donec id est facilisi
+                nullam id praesent rhoncus est. Auctor sed ornare quis porta
+                blandit egestas a. Massa tincidunt cursus nisi varius.
+              </p>
+              <p>
+                Adipiscing id nunc consequat in. Bibendum sed aliquam est non id
+                dignissim et aliquet. Tellus nam integer nunc mauris velit etiam
+                enim.
+              </p>
+            </div>
+          </div>
+          <div className="flex-1 max-[575px]:px-5 relative min-[576px]:px-[90px] min-[768px]:px-[0px]">
+            <img
+              src="/assets/img/professional-transformation.webp"
+              alt="basic"
+              className=""
+            />
+            <div className="absolute top-0 right-0 z-10 text-primary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] min-[992px]:bottom-[-250px] max-[1199px]:bottom-[-250px] min-[1200px]:bottom-[-300px] min-[1400px]:bottom-[-400px] leading-[35px]">
+              信念
+            </div>
+          </div>
+        </div>
+        <img
+          src="/assets/img/transformation-2.webp"
+          alt="style-img"
+          className="absolute w-full max-[575px]:top-[660px] max-[767px]:top-[500px] max-[991px]:top-[210px] max-[1199px]:top-[300px] max-[1399px]:top-[290px] min-[1400px]:top-[360px]"
+        />
+      </div>
     </>
   );
 }
