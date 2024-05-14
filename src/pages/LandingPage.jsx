@@ -219,7 +219,7 @@ function LandingPage() {
               <h3 className="font-tsushima flex justify-center gap-3 min-[768px]:flex-col min-[768px]:gap-0 text-primary text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
                 FROM <div className="text-secondary">BASIC</div>
               </h3>
-              <div className="font-generalsans max-[767px]:text-center">
+              <div className="font-generalsans max-[575px]:px-[12px] max-[575px]:text-[14px] max-[767px]:text-[15px] min-[768px]:text-[16px] max-[767px]:text-center">
                 <p className="max-[991px]:mb-[15px] min-[992px]:mb-[20px]">
                   Tellus viverra donec scelerisque vivamus ipsum proin nisl in.
                   Diam duis ullamcorper tempor eget. Duis donec id est facilisi
@@ -256,7 +256,7 @@ function LandingPage() {
             <h3 className="font-tsushima flex justify-center gap-3 min-[768px]:flex-col min-[768px]:gap-0 text-primary text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
               TO <div className="text-secondary">PROFESSIONAL</div>
             </h3>
-            <div className="font-generalsans max-[767px]:text-center">
+            <div className="font-generalsans max-[575px]:px-[12px] max-[575px]:text-[14px] max-[767px]:text-[15px] min-[768px]:text-[16px] max-[767px]:text-center">
               <p className="max-[991px]:mb-[15px] min-[992px]:mb-[20px]">
                 Tellus viverra donec scelerisque vivamus ipsum proin nisl in.
                 Diam duis ullamcorper tempor eget. Duis donec id est facilisi
