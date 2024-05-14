@@ -250,8 +250,8 @@ function LandingPage() {
           <span>RMATION</span>
         </h2>
       </div>
-      <div className="container overflow-hidden relative">
-        <div className="relative z-10 flex items-center max-[767px]:flex-col-reverse min-[768px]:flex-row max-[767px]:gap-[30px] min-[768px]:gap-[60px] max-[575px]:pt-[55%] max-[767px]:pt-[46%] max-[991px]:pt-[30%] max-[1199px]:pt-[25%] max-[1399px]:pt-[23%] min-[1400px]:pt-[28%]">
+      <div className="container overflow-hidden relative pb-[6%]">
+        <div className="relative z-10 flex items-center max-[767px]:flex-col-reverse min-[768px]:flex-row max-[767px]:gap-[30px] min-[768px]:gap-[60px] max-[375px]:pt-[70%] max-[575px]:pt-[65%] max-[767px]:pt-[55%] max-[991px]:pt-[30%] max-[1199px]:pt-[25%] max-[1399px]:pt-[23%] min-[1400px]:pt-[28%]">
           <div className="flex-1 min-[768px]:flex-[1.5] min-[992px]:flex-1">
             <h3 className="font-tsushima flex justify-center gap-3 min-[768px]:flex-col min-[768px]:gap-0 text-primary text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
               TO <div className="text-secondary">PROFESSIONAL</div>
@@ -276,7 +276,7 @@ function LandingPage() {
               alt="basic"
               className=""
             />
-            <div className="absolute top-0 right-0 z-10 text-primary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] min-[992px]:bottom-[-250px] max-[1199px]:bottom-[-250px] min-[1200px]:bottom-[-300px] min-[1400px]:bottom-[-400px] leading-[35px]">
+            <div className="absolute top-0 right-0 z-10 text-primary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] min-[992px]:bottom-[-250px] max-[1199px]:bottom-[-250px] min-[1200px]:bottom-[-300px] min-[1400px]:bottom-[-400px] leading-[52px]">
               信念
             </div>
           </div>
@@ -287,6 +287,102 @@ function LandingPage() {
           className="absolute w-full max-[575px]:top-[660px] max-[767px]:top-[500px] max-[991px]:top-[210px] max-[1199px]:top-[300px] max-[1399px]:top-[290px] min-[1400px]:top-[360px]"
         />
       </div>
+
+      <section className="overflow-hidden">
+        <div className="flex justify-center mb-4 pt-[40px]">
+          <img
+            src="/assets/style-elements/star.svg"
+            alt="star"
+            className="opacity-[20%] animate-rotate"
+          />
+        </div>
+        <h2 className="font-tsushima text-secondary text-center text-[24px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[25px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
+          WHAT WE <span className="text-primary">OFFER</span>
+        </h2>
+        <div className="container">
+          <div className="flex max-[767px]:flex-col max-[767px]:items-center max-[767px]:gap-[30px] w-full justify-center">
+            <div className="flex w-full">
+              <div className="relative flex flex-col max-[767px]:flex-1 min-[768px]:px-[35px] items-center max-[767px]:mt-0 max-[991px]:mt-[40px] min-[768px]:mt-[60px] max-[767px]:after:content-[''] max-[767px]:after:absolute max-[767px]:after:w-[1px] max-[767px]:after:h-full max-[767px]:after:bg-secondary max-[767px]:after:bottom-[0px] max-[767px]:after:right-0 max-[767px]:after:opacity-20 min-[768px]:after:content-[''] min-[768px]:after:absolute min-[768px]:after:w-[1px] min-[768px]:after:h-[70px] min-[768px]:after:bg-secondary min-[768px]:after:bottom-[25%] min-[768px]:after:right-0 min-[768px]:after:opacity-20">
+                <img
+                  src="/assets/img/tai-chi-classes.svg"
+                  alt="offer"
+                  className="max-[991px]:w-[75px] max-[1399px]:w-[90px] max-w-[none]"
+                />
+                <h2 className="font-generalsans  max-[767px]:max-w-[100px] text-center max-[1399px]:text-[16px] max-[1399px]:leading-[22px] min-[1400px]:text-[18px] min-[1400px]:leading-[27px]">
+                  Tai Chi Classes
+                </h2>
+              </div>
+
+              <div className="relative flex flex-col max-[767px]:flex-1 min-[768px]:px-[35px] items-center max-[767px]:mt-0 max-[991px]:mt-[10px] min-[768px]:mt-[20px] min-[768px]:after:content-[''] min-[768px]:after:absolute min-[768px]:after:w-[1px] min-[768px]:after:h-[70px] min-[768px]:after:bg-secondary min-[768px]:after:bottom-[35%] min-[768px]:after:right-0 min-[768px]:after:opacity-20">
+                <img
+                  src="/assets/img/workshops-and-retreats.svg"
+                  alt="offer"
+                  className="max-[991px]:w-[75px] max-[1399px]:w-[90px] max-w-[none]"
+                />
+                <h2 className="font-generalsans  max-[767px]:max-w-[120px] text-center max-[1399px]:text-[16px] max-[1399px]:leading-[22px] min-[1400px]:text-[18px] min-[1400px]:leading-[27px]">
+                  Workshops and Retreats
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex w-full">
+              <div className="relative flex flex-col max-[767px]:flex-1 min-[768px]:px-[35px] items-center max-[767px]:after:content-[''] max-[767px]:after:absolute max-[767px]:after:w-[1px] max-[767px]:after:h-full max-[767px]:after:bg-secondary max-[767px]:after:bottom-[0px] max-[767px]:after:right-0 max-[767px]:after:opacity-20">
+                <img
+                  src="/assets/img/online-resources.svg"
+                  alt="offer"
+                  className="max-[991px]:w-[75px] max-[1399px]:w-[90px] max-w-[none]"
+                />
+                <h2 className="font-generalsans max-[767px]:max-w-[120px] text-center max-[1399px]:text-[16px] max-[1399px]:leading-[22px] min-[1400px]:text-[18px] min-[1400px]:leading-[27px]">
+                  Online Resources
+                </h2>
+              </div>
+
+              <div className="relative flex flex-col max-[767px]:flex-1 min-[768px]:px-[35px] items-center max-[767px]:mt-0 max-[991px]:mt-[10px] min-[768px]:mt-[20px] min-[768px]:before:content-[''] min-[768px]:before:absolute min-[768px]:before:w-[1px] min-[768px]:before:h-[70px] min-[768px]:before:bg-secondary min-[768px]:before:bottom-[35%] min-[768px]:before:left-0 min-[768px]:before:opacity-20">
+                <img
+                  src="/assets/img/personalized-coaching.svg"
+                  alt="offer"
+                  className="max-[991px]:w-[75px] max-[1399px]:w-[90px] max-w-[none]"
+                />
+                <h2 className="font-generalsans  max-[767px]:max-w-[120px] text-center max-[1399px]:text-[16px] max-[1399px]:leading-[22px] min-[1400px]:text-[18px] min-[1400px]:leading-[27px]">
+                  Personalized Coaching
+                </h2>
+              </div>
+            </div>
+
+            <div className="relative flex flex-col min-[768px]:px-[35px] items-center max-[767px]:mt-0 max-[991px]:mt-[40px] min-[768px]:mt-[60px] min-[768px]:before:content-[''] min-[768px]:before:absolute min-[768px]:before:w-[1px] min-[768px]:before:h-[70px] min-[768px]:before:bg-secondary min-[768px]:before:bottom-[25%] min-[768px]:before:left-0 min-[768px]:before:opacity-20">
+              <img
+                src="/assets/img/community-events.svg"
+                alt="offer"
+                className="max-[991px]:w-[75px] max-[1399px]:w-[90px] max-w-[none]"
+              />
+              <h2 className="font-generalsans max-[767px]:max-w-[120px] text-center max-[1399px]:text-[16px] max-[1399px]:leading-[22px] min-[1400px]:text-[18px] min-[1400px]:leading-[27px]">
+                Community Events
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative max-[767px]:pt-[70px] bg-[url('/assets/style-elements/who-we-are.webp')] bg-cover bg-no-repeat flex justify-center max-[767px]:items-end max-[991px]:items-center min-[992px]:items-end min-[768px]:h-[400px] h-300px] min-[992px]:h-[400px] min-[1200px]:h-[500px] min-[1400px]:h-[600px] min-[1700px]:h-[700px] min-[2000px]:h-[800px] min-[2300px]:h-[900px]">
+          <div className="relative w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full">
+            <div className="top-0 left-0 absolute w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-1 "></div>
+            <div className="top-0 left-0 absolute w-[220px] h-[220px] min-[576px]:w-[300px] min-[576px]:h-[300px] min-[992px]:w-[400px] min-[992px]:h-[400px] min-[1200px]:w-[450px] min-[1200px]:h-[450px] min-[1400px]:w-[550px] min-[1400px]:h-[550px] bg-primary rounded-full animate-scale-pulse-2 "></div>
+          </div>
+          <div className="absolute z-20 bg-[url('/assets/img/what-we-offers.webp')] bg-no-repeat bg-center w-full h-full bottom-[0px] max-[767px]:bg-contain min-[768px]:bg-contain min-[992px]:bg-cover min-[1200px]:bg-cover min-[1400px]:bg-cover">
+            <img
+              src="/assets/style-elements/cutted-border.webp"
+              alt=""
+              className="absolute max-[488px]:bottom-[57px] min-[489px]:bottom-[12%] min-[576px]:bottom-[15.5%] min-[701px]:bottom-[15%] min-[720px]:bottom-[13%] min-[762px]:bottom-[12%] min-[768px]:bottom-[13%] max-[678px]:h-[40px] min-[818px]:bottom-[10%] min-[888px]:bottom-[7%] min-[951px]:bottom-[5%] min-[992px]:bottom-[0px] z-20 w-full "
+            />
+          </div>
+          <div className="absolute bottom-[-1px] min-[765px]:bottom-[0px] w-full h-[60px] bg-white"></div>
+
+          <img
+            src="/assets/style-elements/star.svg"
+            alt="star"
+            className="absolute z-10 left-[-65px] bottom-[90px] min-[768px]:bottom-[170px] opacity-[20%] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+          />
+        </div>
+      </section>
     </>
   );
 }
