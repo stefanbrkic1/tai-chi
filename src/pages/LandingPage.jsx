@@ -386,6 +386,19 @@ function LandingPage() {
       </section>
 
       <PricingSection />
+
+      <section>
+        <div className="flex justify-center mb-4 pt-[40px]">
+          <img
+            src="/assets/style-elements/star.svg"
+            alt="star"
+            className="opacity-[20%] animate-rotate"
+          />
+        </div>
+        <h3 className="font-tsushima text-secondary text-center  text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
+          EXPLORE <span className="text-primary">PROGRAMS</span>
+        </h3>
+      </section>
     </>
   );
 }

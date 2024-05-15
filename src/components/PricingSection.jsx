@@ -4,7 +4,7 @@ function PricingSection() {
   const [selectedPrice, setSelectedPrice] = useState(2);
 
   return (
-    <div className="relative overflow-hidden py-[5%]">
+    <div className="relative overflow-hidden pt-[3%] pb-[5%]">
       <section className="relative container max-[575px]:px-[12px]">
         <div className="absolute top-0 z-10 max-[767px]:hidden text-primary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] max-[992px]:top-[0px] max-[1199px]:top-[6%] min-[1200px]:top-[6%] min-[1400px]:top-[7%] leading-[35px]">
           月次
@@ -16,9 +16,9 @@ function PricingSection() {
             className="opacity-[20%] animate-rotate"
           />
         </div>
-        <h2 className="font-tsushima text-secondary text-center text-[24px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[6px] min-[1200px]:mb-[0px]">
+        <h3 className="font-tsushima text-secondary text-center  text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
           FLEXIBLE <span className="text-primary">PRICING</span>
-        </h2>
+        </h3>
         <div className="flex justify-center">
           <p className="max-w-[650px] font-generalsans max-[575px]:px-[12px] max-[575px]:text-[14px] max-[767px]:text-[15px] min-[768px]:text-[16px] text-center">
             Adipiscing id nunc consequat in. Bibendum sed aliquam est non id
