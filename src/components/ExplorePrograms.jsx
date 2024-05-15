@@ -51,15 +51,15 @@ function ExplorePrograms() {
         EXPLORE <span className="text-primary">PROGRAMS</span>
         <div
           onClick={() => sliderRef.current.slickPrev()}
-          className="max-[767px]:hidden absolute text-[18px] hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] rounded-full w-[45px] h-[45px] flex justify-center items-center leading-[0px] max-[991px]:top-[-8px] top-[-2px] left-0"
+          className="max-[767px]:hidden absolute group text-[18px] hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] rounded-full w-[45px] h-[45px] flex justify-center items-center leading-[0px] max-[991px]:top-[-8px] top-[-2px] left-0"
         >
-          <div>{"<"}</div>
+          <div className="w-[20px] h-[20px] bg-[url('/assets/style-elements/arrow-right-solid-black.svg')] group-hover:bg-[url('/assets/style-elements/arrow-right-solid.svg')] rotate-180 bg-contain bg-center bg-no-repeat"></div>
         </div>
         <div
           onClick={() => sliderRef.current.slickNext()}
-          className="max-[767px]:hidden absolute text-[18px] hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] rounded-full w-[45px] h-[45px] flex justify-center items-center leading-[0px] max-[991px]:top-[-8px] top-[-2px] right-0"
+          className="max-[767px]:hidden group absolute text-[18px] hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] rounded-full w-[45px] h-[45px] flex justify-center items-center leading-[0px] max-[991px]:top-[-8px] top-[-2px] right-0"
         >
-          <div>{">"}</div>
+          <div className="w-[20px] h-[20px] bg-[url('/assets/style-elements/arrow-right-solid-black.svg')] group-hover:bg-[url('/assets/style-elements/arrow-right-solid.svg')] bg-contain bg-center bg-no-repeat"></div>
         </div>
       </h3>
 
@@ -128,15 +128,15 @@ function ExplorePrograms() {
       <div className="flex justify-center items-center gap-5 mt-8">
         <div
           onClick={() => sliderRef.current.slickPrev()}
-          className="min-[768px]:hidden text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
+          className="min-[768px]:hidden group text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
         >
-          <div>{"<"}</div>
+          <div className="w-[20px] h-[20px] bg-[url('/assets/style-elements/arrow-right-solid-black.svg')] group-hover:bg-[url('/assets/style-elements/arrow-right-solid.svg')] rotate-180 bg-contain bg-center bg-no-repeat"></div>
         </div>
         <div
           onClick={() => sliderRef.current.slickNext()}
-          className="min-[768px]:hidden text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
+          className="min-[768px]:hidden group text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
         >
-          <div>{">"}</div>
+          <div className="w-[20px] h-[20px] bg-[url('/assets/style-elements/arrow-right-solid-black.svg')] group-hover:bg-[url('/assets/style-elements/arrow-right-solid.svg')] bg-contain bg-center bg-no-repeat"></div>
         </div>
       </div>
     </section>
