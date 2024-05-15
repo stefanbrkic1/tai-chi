@@ -18,6 +18,11 @@
 }
 
 @font-face {
+  font-family: "BoldGeneral";
+  src: url("/assets/fonts/GeneralSans/GeneralSans-Bold.ttf");
+}
+
+@font-face {
   font-family: "Satoshi";
   src: url("/assets/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
   src: url("/assets/fonts/Satoshi/Satoshi-Bold.woff") format("woff");
@@ -135,6 +140,19 @@
 
   .animate-rotate {
     animation: 7s rotate infinite linear;
+  }
+
+  .bg-mode-multiply {
+    background-blend-mode: multiply;
+  }
+
+  .glow-shadow {
+    box-shadow: 0px 0px 20px 0px #ed4747;
+  }
+
+  .clip-button {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 75%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 75%, 0 0);
   }
 }
 

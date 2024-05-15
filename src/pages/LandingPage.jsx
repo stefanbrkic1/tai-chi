@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import PricingSection from "../components/PricingSection";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -383,6 +384,8 @@ function LandingPage() {
           />
         </div>
       </section>
+
+      <PricingSection />
     </>
   );
 }
