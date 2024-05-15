@@ -151,8 +151,13 @@
   }
 
   .clip-button {
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 75%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 75%, 0 0);
     clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 75%, 0 0);
+  }
+
+  .clip-carousel {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 95%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 95%, 0 0);
   }
 }
 
@@ -235,4 +240,11 @@
 /* Define scrollbar track */
 ::-webkit-scrollbar-track {
   background-color: #ffffff; /* color of the scrollbar track */
+}
+
+.slick-slide > div {
+  margin: 0 12px;
+}
+.slick-list {
+  margin: 0 -10px;
 }
