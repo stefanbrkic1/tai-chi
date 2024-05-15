@@ -87,7 +87,7 @@ function ExplorePrograms() {
           <div className="font-generalsans p-5">
             <h4>Secrets of powerful, Perfect & Beautiful Tai Chi</h4>
             <div className="flex justify-between items-center mt-4">
-              <div>23 Lectures</div>
+              <div>21 Lectures</div>
               <div>Beginner</div>
             </div>
           </div>
@@ -101,7 +101,7 @@ function ExplorePrograms() {
           <div className="font-generalsans p-5">
             <h4>Secrets of powerful, Perfect & Beautiful Tai Chi</h4>
             <div className="flex justify-between items-center mt-4">
-              <div>23 Lectures</div>
+              <div>18 Lectures</div>
               <div>Beginner</div>
             </div>
           </div>
@@ -115,7 +115,7 @@ function ExplorePrograms() {
           <div className="font-generalsans p-5">
             <h4>Secrets of powerful, Perfect & Beautiful Tai Chi</h4>
             <div className="flex justify-between items-center mt-4">
-              <div>23 Lectures</div>
+              <div>16 Lectures</div>
               <div>Beginner</div>
             </div>
           </div>
