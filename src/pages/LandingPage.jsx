@@ -4,6 +4,7 @@ import ExplorePrograms from "../components/ExplorePrograms";
 import Testimonials from "../components/Testimonials";
 import Articles from "../components/Articles";
 import InstagramCaroussel from "../components/InstagramCaroussel";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -398,6 +399,8 @@ function LandingPage() {
       <Articles />
 
       <InstagramCaroussel />
+
+      <Footer />
     </>
   );
 }
