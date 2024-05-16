@@ -178,6 +178,21 @@
     filter: invert(1900%) sepia(1100%) saturate(0%) hue-rotate(330deg)
       brightness(220%) contrast(103%);
   }
+
+  .articles-mask {
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    position: absolute;
+    left: -2px;
+    top: 0px;
+  }
+
+  @media (max-width: 575px) {
+    .articles-mask {
+      top: -2px;
+      left: 0px;
+    }
+  }
 }
 
 :root {
