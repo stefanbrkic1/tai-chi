@@ -3,6 +3,7 @@ import PricingSection from "../components/PricingSection";
 import ExplorePrograms from "../components/ExplorePrograms";
 import Testimonials from "../components/Testimonials";
 import Articles from "../components/Articles";
+import InstagramCaroussel from "../components/InstagramCaroussel";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -395,6 +396,8 @@ function LandingPage() {
       <Testimonials />
 
       <Articles />
+
+      <InstagramCaroussel />
     </>
   );
 }
