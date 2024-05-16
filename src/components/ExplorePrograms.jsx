@@ -39,7 +39,7 @@ function ExplorePrograms() {
   };
 
   return (
-    <section className="relative pb-[7%] container">
+    <section className="relative pb-[5%] container">
       <div className="flex justify-center mb-4 pt-[40px]">
         <img
           src="/assets/style-elements/star.svg"

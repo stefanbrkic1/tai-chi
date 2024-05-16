@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import PricingSection from "../components/PricingSection";
 import ExplorePrograms from "../components/ExplorePrograms";
+import Testimonials from "../components/Testimonials";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -389,6 +390,8 @@ function LandingPage() {
       <PricingSection />
 
       <ExplorePrograms />
+
+      <Testimonials />
     </>
   );
 }

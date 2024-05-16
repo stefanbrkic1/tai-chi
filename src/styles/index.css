@@ -159,6 +159,25 @@
     -webkit-clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 95%, 0 0);
     clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 95%, 0 0);
   }
+
+  .clip-testimonial {
+    -webkit-clip-path: polygon(
+      0 0,
+      94% 0%,
+      100% 16%,
+      100% 100%,
+      6% 100%,
+      0 86%
+    );
+    clip-path: polygon(0 0, 94% 0%, 100% 16%, 100% 100%, 6% 100%, 0 86%);
+  }
+
+  .rating-stars-white {
+    -webkit-filter: invert(1900%) sepia(1100%) saturate(0%) hue-rotate(330deg)
+      brightness(220%) contrast(103%);
+    filter: invert(1900%) sepia(1100%) saturate(0%) hue-rotate(330deg)
+      brightness(220%) contrast(103%);
+  }
 }
 
 :root {
