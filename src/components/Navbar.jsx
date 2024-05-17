@@ -159,33 +159,9 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav className="relative min-[992px]:hidden p-[12px] z-40">
-        <div className="container flex items-center justify-between">
-          <Link to={"/"}>
-            <img
-              src="/assets/style-elements/logo.svg"
-              alt="logo"
-              width="119"
-              height="21"
-            />
-          </Link>
-
-          <button
-            onClick={openSidebar}
-            className="w-[47px] p-2 flex flex-col items-end"
-          >
-            <div className="w-[60%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
-            <div className="w-[80%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
-            <div className="w-full h-[3px] bg-primary rounded-2xl"></div>
-          </button>
-        </div>
-
-        <div
-          className={`font-generalsans top-0 right-0 font-bold bg-white fixed z-50 h-screen w-[270px] sm:w-[300px] p-5 flex flex-col transition-all duration-500 ${
-            isSidebarOpen ? "translate-x-[0px]" : "translate-x-[120%]"
-          }`}
-        >
-          <div className="flex items-center justify-between">
+      <div className="absolute w-full">
+        <nav className="relative min-[992px]:hidden p-[12px] z-40">
+          <div className="container flex items-center justify-between">
             <Link to={"/"}>
               <img
                 src="/assets/style-elements/logo.svg"
@@ -194,153 +170,180 @@ function Navbar() {
                 height="21"
               />
             </Link>
+
             <button
-              onClick={closeSidebar}
-              style={{
-                backgroundImage: "url(/assets/style-elements/xmark-solid.svg)",
-              }}
-              className="w-[30px] h-[30px] bg-center bg-no-repeat bg-contain"
-            ></button>
+              onClick={openSidebar}
+              className="w-[47px] p-2 flex flex-col items-end"
+            >
+              <div className="w-[60%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
+              <div className="w-[80%] h-[3px] bg-primary rounded-2xl mb-[4px]"></div>
+              <div className="w-full h-[3px] bg-primary rounded-2xl"></div>
+            </button>
           </div>
-          <div className="flex-1 flex items-center">
-            <div className="w-full flex flex-col gap-[20px]">
-              <div>
-                <Link
-                  to={"/"}
-                  onClick={closeSidebar}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
-                >
-                  HOME
-                </Link>
-              </div>
 
-              <div>
-                <Link
-                  to={"/about"}
-                  onClick={closeSidebar}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/about"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
-                >
-                  ABOUT US
-                </Link>
-              </div>
-
-              <div>
-                <Link
-                  to={"/programs"}
-                  onClick={closeSidebar}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/programs"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
-                >
-                  PROGRAMS
-                </Link>
-              </div>
-
-              <div>
-                <Link
-                  to={"/"}
-                  onClick={() => {
-                    closeSidebar();
-                    handlePricingScroll();
-                  }}
-                  className="transition-all duration-300 hover:text-primary"
-                >
-                  PRICING
-                </Link>
-              </div>
-
-              <div>
-                <Link
-                  to={"/gallery"}
-                  onClick={closeSidebar}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/gallery"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
-                >
-                  GALLERY
-                </Link>
-              </div>
-
-              <div className="group transition-all duration-500 relative h-full hover:text-primary cursor-pointer flex flex-col">
-                <div className="flex items-center">
-                  PAGES
-                  <span>
-                    <img
-                      src="assets/style-elements/dropdown.webp"
-                      alt="dropdown icon"
-                      width="12"
-                      height="6"
-                      className="ml-2"
-                    />
-                  </span>
+          <div
+            className={`font-generalsans top-0 right-0 font-bold bg-white fixed z-50 h-screen w-[270px] sm:w-[300px] p-5 flex flex-col transition-all duration-500 ${
+              isSidebarOpen ? "translate-x-[0px]" : "translate-x-[120%]"
+            }`}
+          >
+            <div className="flex items-center justify-between">
+              <Link to={"/"}>
+                <img
+                  src="/assets/style-elements/logo.svg"
+                  alt="logo"
+                  width="119"
+                  height="21"
+                />
+              </Link>
+              <button
+                onClick={closeSidebar}
+                style={{
+                  backgroundImage:
+                    "url(/assets/style-elements/xmark-solid.svg)",
+                }}
+                className="w-[30px] h-[30px] bg-center bg-no-repeat bg-contain"
+              ></button>
+            </div>
+            <div className="flex-1 flex items-center">
+              <div className="w-full flex flex-col gap-[20px]">
+                <div>
+                  <Link
+                    to={"/"}
+                    onClick={closeSidebar}
+                    className={`transition-all duration-300 ${
+                      location.pathname === "/"
+                        ? "text-primary"
+                        : "hover:text-primary"
+                    }`}
+                  >
+                    HOME
+                  </Link>
                 </div>
-                <div className="transition-[height] duration-500 h-[0px] overflow-hidden group-hover:h-[107px] flex items-center">
-                  <div className="text-secondary w-full h-[0px] overflow-hidden group-hover:h-[80px] bg-white flex flex-col transition-all duration-500 shadow-md border-t-2 group-hover: border-primary">
-                    <Link
-                      to={"/coming-soon"}
-                      onClick={closeSidebar}
-                      className="hover:text-primary m-2"
-                    >
-                      COMING SOON
-                    </Link>
-                    <Link to={"/*"} className="hover:text-primary m-2">
-                      404 PAGE
-                    </Link>
+
+                <div>
+                  <Link
+                    to={"/about"}
+                    onClick={closeSidebar}
+                    className={`transition-all duration-300 ${
+                      location.pathname === "/about"
+                        ? "text-primary"
+                        : "hover:text-primary"
+                    }`}
+                  >
+                    ABOUT US
+                  </Link>
+                </div>
+
+                <div>
+                  <Link
+                    to={"/programs"}
+                    onClick={closeSidebar}
+                    className={`transition-all duration-300 ${
+                      location.pathname === "/programs"
+                        ? "text-primary"
+                        : "hover:text-primary"
+                    }`}
+                  >
+                    PROGRAMS
+                  </Link>
+                </div>
+
+                <div>
+                  <Link
+                    to={"/"}
+                    onClick={() => {
+                      closeSidebar();
+                      handlePricingScroll();
+                    }}
+                    className="transition-all duration-300 hover:text-primary"
+                  >
+                    PRICING
+                  </Link>
+                </div>
+
+                <div>
+                  <Link
+                    to={"/gallery"}
+                    onClick={closeSidebar}
+                    className={`transition-all duration-300 ${
+                      location.pathname === "/gallery"
+                        ? "text-primary"
+                        : "hover:text-primary"
+                    }`}
+                  >
+                    GALLERY
+                  </Link>
+                </div>
+
+                <div className="group transition-all duration-500 relative h-full hover:text-primary cursor-pointer flex flex-col">
+                  <div className="flex items-center">
+                    PAGES
+                    <span>
+                      <img
+                        src="assets/style-elements/dropdown.webp"
+                        alt="dropdown icon"
+                        width="12"
+                        height="6"
+                        className="ml-2"
+                      />
+                    </span>
+                  </div>
+                  <div className="transition-[height] duration-500 h-[0px] overflow-hidden group-hover:h-[107px] flex items-center">
+                    <div className="text-secondary w-full h-[0px] overflow-hidden group-hover:h-[80px] bg-white flex flex-col transition-all duration-500 shadow-md border-t-2 group-hover: border-primary">
+                      <Link
+                        to={"/coming-soon"}
+                        onClick={closeSidebar}
+                        className="hover:text-primary m-2"
+                      >
+                        COMING SOON
+                      </Link>
+                      <Link to={"/*"} className="hover:text-primary m-2">
+                        404 PAGE
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div>
-                <Link
-                  to={"/blog"}
-                  onClick={closeSidebar}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/blog"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
-                >
-                  BLOG
-                </Link>
-              </div>
+                <div>
+                  <Link
+                    to={"/blog"}
+                    onClick={closeSidebar}
+                    className={`transition-all duration-300 ${
+                      location.pathname === "/blog"
+                        ? "text-primary"
+                        : "hover:text-primary"
+                    }`}
+                  >
+                    BLOG
+                  </Link>
+                </div>
 
-              <div>
-                <Link
-                  to={"/contact"}
-                  onClick={closeSidebar}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/contact"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
-                >
-                  CONTACT US
-                </Link>
+                <div>
+                  <Link
+                    to={"/contact"}
+                    onClick={closeSidebar}
+                    className={`transition-all duration-300 ${
+                      location.pathname === "/contact"
+                        ? "text-primary"
+                        : "hover:text-primary"
+                    }`}
+                  >
+                    CONTACT US
+                  </Link>
+                </div>
               </div>
             </div>
+            <img
+              src="/assets/style-elements/cutted-border-2.webp"
+              alt="styling-element"
+              className="absolute left-[-35px] top-[-40px]"
+            />
           </div>
-          <img
-            src="/assets/style-elements/cutted-border-2.webp"
-            alt="styling-element"
-            className="absolute left-[-35px] top-[-40px]"
-          />
-        </div>
-        {isSidebarOpen && (
-          <div className="overlay fixed w-full h-full bg-black z-40 top-0 left-0"></div>
-        )}
-      </nav>
+          {isSidebarOpen && (
+            <div className="overlay fixed w-full h-full bg-black z-40 top-0 left-0"></div>
+          )}
+        </nav>
+      </div>
     </>
   );
 }

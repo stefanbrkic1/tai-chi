@@ -54,7 +54,7 @@ function InstagramCaroussel() {
         <img
           src="/assets/style-elements/star.svg"
           alt="star"
-          className="opacity-[20%] animate-rotate"
+          className="opacity-[20%] animate-rotate max-[1199px]:w-[30px] max-[1199px]:h-[30px] max-[1399px]:w-[40px] max-[1399px]:h-[40px] w-[52px] h-[52px]"
         />
       </div>
       <h3 className="relative font-generalsans font-bold text-primary text-center text-[20px] max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] mb-[6px] max-[767px]:text-center">

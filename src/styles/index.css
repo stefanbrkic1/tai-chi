@@ -116,6 +116,10 @@
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   }
 
+  .fade-opacity-2 {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+
   .animate-scale-pulse-1 {
     animation: 5s scale-pulse infinite;
   }
@@ -281,4 +285,8 @@
 }
 .slick-list {
   margin: 0 -10px;
+}
+
+.odometer.odometer-auto-theme {
+  font-family: "Tsushima", sans-serif !important;
 }

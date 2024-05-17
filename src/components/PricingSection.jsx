@@ -16,7 +16,7 @@ function PricingSection() {
           <img
             src="/assets/style-elements/star.svg"
             alt="star"
-            className="opacity-[20%] animate-rotate"
+            className="opacity-[20%] animate-rotate max-[1199px]:w-[30px] max-[1199px]:h-[30px] max-[1399px]:w-[40px] max-[1399px]:h-[40px] w-[52px] h-[52px]"
           />
         </div>
         <h3 className="font-tsushima text-secondary text-center max-[991px]:text-[26px] max-[1199px]:text-[28px] max-[1399px]:text-[38px] min-[1400px]:text-[48px] max-[1199px]:leading-[35px] max-[1399px]:leading-[45px] min-[1400px]:leading-[55px] max-[991px]:mb-[8px] max-[1399px]:mb-[12px] min-[1400px]:mb-[20px] max-[767px]:text-center">
@@ -200,15 +200,15 @@ function PricingSection() {
       </section>
 
       <img
-        src="/assets/style-elements/star.svg"
+        src="/assets/style-elements/star-2.svg"
         alt="star"
-        className="absolute z-10 top-[50px] right-[-65px] opacity-[20%] animate-rotate max-[575px]:hidden max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+        className="absolute z-10 top-[50px] right-[-65px] animate-rotate max-[575px]:hidden max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
       />
 
       <img
-        src="/assets/style-elements/star.svg"
+        src="/assets/style-elements/star-2.svg"
         alt="star"
-        className="absolute z-0 bottom-[50px] left-[-65px] opacity-[20%] animate-rotate max-[575px]:hidden max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+        className="absolute z-0 bottom-[50px] left-[-65px] animate-rotate max-[575px]:hidden max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
       />
     </div>
   );

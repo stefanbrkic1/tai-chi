@@ -143,7 +143,7 @@ function LandingPage() {
             <img
               src="/assets/style-elements/star.svg"
               alt="star"
-              className="opacity-[20%] animate-rotate"
+              className="opacity-[20%] animate-rotate max-[1199px]:w-[30px] max-[1199px]:h-[30px] max-[1399px]:w-[40px] max-[1399px]:h-[40px] w-[52px] h-[52px]"
             />
           </div>
           <h2 className="font-tsushima text-secondary text-center text-[28px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[10px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
@@ -196,14 +196,14 @@ function LandingPage() {
           <div className="absolute bottom-[-20px] w-full h-[60px] bg-white"></div>
 
           <img
-            src="/assets/style-elements/star.svg"
+            src="/assets/style-elements/star-2.svg"
             alt="star"
-            className="absolute z-10 top-[-30px] right-[-65px] opacity-[20%] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+            className="absolute z-10 top-[-30px] right-[-65px] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
           />
           <img
-            src="/assets/style-elements/star.svg"
+            src="/assets/style-elements/star-2.svg"
             alt="star"
-            className="absolute z-10 left-[-65px] bottom-[90px] min-[768px]:bottom-[170px] opacity-[20%] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+            className="absolute z-10 left-[-65px] bottom-[90px] min-[768px]:bottom-[170px] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
           />
         </div>
       </section>
@@ -299,7 +299,7 @@ function LandingPage() {
           <img
             src="/assets/style-elements/star.svg"
             alt="star"
-            className="opacity-[20%] animate-rotate"
+            className="opacity-[20%] animate-rotate max-[1199px]:w-[30px] max-[1199px]:h-[30px] max-[1399px]:w-[40px] max-[1399px]:h-[40px] w-[52px] h-[52px]"
           />
         </div>
         <h2 className="font-tsushima text-secondary text-center text-[28px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[25px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
@@ -383,9 +383,9 @@ function LandingPage() {
           <div className="absolute bottom-[-1px] min-[765px]:bottom-[0px] w-full h-[60px] bg-white"></div>
 
           <img
-            src="/assets/style-elements/star.svg"
+            src="/assets/style-elements/star-2.svg"
             alt="star"
-            className="absolute z-10 left-[-65px] bottom-[90px] min-[768px]:bottom-[170px] opacity-[20%] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+            className="absolute z-10 left-[-65px] bottom-[90px] min-[768px]:bottom-[170px] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
           />
         </div>
       </section>
