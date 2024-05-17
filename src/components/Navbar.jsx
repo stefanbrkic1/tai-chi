@@ -27,6 +27,21 @@ function Navbar() {
     return () => window.removeEventListener("resize", handleSidebarOnResize);
   }, []);
 
+  function scrollToPricing() {
+    const pricingSection = document.getElementById("pricingSection");
+    pricingSection.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function handlePricingScroll() {
+    if (location.pathname === "/") {
+      scrollToPricing();
+    } else {
+      setTimeout(() => {
+        scrollToPricing();
+      }, 0);
+    }
+  }
+
   return (
     <>
       <div className="relative bg-primary text-center font-satoshi text-[10px] sm:text-[12px] text-white py-[7px] sm:py-[6px] z-40">
@@ -67,16 +82,13 @@ function Navbar() {
             >
               PROGRAMS
             </Link>
-            <div
-              onClick={() => {
-                const pricingSection =
-                  document.getElementById("pricingSection");
-                pricingSection.scrollIntoView({ behavior: "smooth" });
-              }}
+            <Link
+              to={"/"}
+              onClick={handlePricingScroll}
               className="cursor-pointer transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 hover:text-primary after:w-0 hover:after:w-[22px]"
             >
               PRICING
-            </div>
+            </Link>
           </ul>
           <div className="pt-[19px] pb-[20px] fade-border-left fade-border-right">
             <div className="min-[993px]:px-[35px] xl:px-[55px] 2xl:px-[65px]">
@@ -195,6 +207,7 @@ function Navbar() {
               <div>
                 <Link
                   to={"/"}
+                  onClick={closeSidebar}
                   className={`transition-all duration-300 ${
                     location.pathname === "/"
                       ? "text-primary"
@@ -208,6 +221,7 @@ function Navbar() {
               <div>
                 <Link
                   to={"/about"}
+                  onClick={closeSidebar}
                   className={`transition-all duration-300 ${
                     location.pathname === "/about"
                       ? "text-primary"
@@ -221,6 +235,7 @@ function Navbar() {
               <div>
                 <Link
                   to={"/programs"}
+                  onClick={closeSidebar}
                   className={`transition-all duration-300 ${
                     location.pathname === "/programs"
                       ? "text-primary"
@@ -233,12 +248,12 @@ function Navbar() {
 
               <div>
                 <Link
-                  to={"/pricing"}
-                  className={`transition-all duration-300 ${
-                    location.pathname === "/pricing"
-                      ? "text-primary"
-                      : "hover:text-primary"
-                  }`}
+                  to={"/"}
+                  onClick={() => {
+                    closeSidebar();
+                    handlePricingScroll();
+                  }}
+                  className="transition-all duration-300 hover:text-primary"
                 >
                   PRICING
                 </Link>
@@ -247,6 +262,7 @@ function Navbar() {
               <div>
                 <Link
                   to={"/gallery"}
+                  onClick={closeSidebar}
                   className={`transition-all duration-300 ${
                     location.pathname === "/gallery"
                       ? "text-primary"
@@ -274,6 +290,7 @@ function Navbar() {
                   <div className="text-secondary w-full h-[0px] overflow-hidden group-hover:h-[80px] bg-white flex flex-col transition-all duration-500 shadow-md border-t-2 group-hover: border-primary">
                     <Link
                       to={"/coming-soon"}
+                      onClick={closeSidebar}
                       className="hover:text-primary m-2"
                     >
                       COMING SOON
@@ -288,6 +305,7 @@ function Navbar() {
               <div>
                 <Link
                   to={"/blog"}
+                  onClick={closeSidebar}
                   className={`transition-all duration-300 ${
                     location.pathname === "/blog"
                       ? "text-primary"
@@ -301,6 +319,7 @@ function Navbar() {
               <div>
                 <Link
                   to={"/contact"}
+                  onClick={closeSidebar}
                   className={`transition-all duration-300 ${
                     location.pathname === "/contact"
                       ? "text-primary"
