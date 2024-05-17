@@ -60,7 +60,7 @@ function AboutPage() {
         />
       </div>
 
-      <section className="relative max-[575px]:pt-[4%] max-[991px]:pt-[2%] pt-[5%] pb-[15%]">
+      <section className="relative max-[575px]:pt-[4%] max-[991px]:pt-[2%] pt-[5%] max-[575px]:pb-[5%] max-[991px]:pb-[7%] pb-[10%]">
         <div className="flex justify-center mb-4 pt-[40px]">
           <img
             src="/assets/style-elements/star.svg"
