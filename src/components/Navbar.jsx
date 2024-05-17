@@ -67,16 +67,16 @@ function Navbar() {
             >
               PROGRAMS
             </Link>
-            <Link
-              to={"/pricing"}
-              className={`transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 ${
-                location.pathname === "/pricing"
-                  ? "text-primary after:w-[22px]"
-                  : "hover:text-primary after:w-0 hover:after:w-[22px]"
-              }`}
+            <div
+              onClick={() => {
+                const pricingSection =
+                  document.getElementById("pricingSection");
+                pricingSection.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="cursor-pointer transition-all duration-500 relative h-full flex items-center justify-center after:content-[''] after:h-[2px] after:bg-primary after:absolute after:bottom-[-2px] after:transition-all after:duration-500 hover:text-primary after:w-0 hover:after:w-[22px]"
             >
               PRICING
-            </Link>
+            </div>
           </ul>
           <div className="pt-[19px] pb-[20px] fade-border-left fade-border-right">
             <div className="min-[993px]:px-[35px] xl:px-[55px] 2xl:px-[65px]">

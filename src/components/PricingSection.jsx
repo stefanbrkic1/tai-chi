@@ -5,7 +5,10 @@ function PricingSection() {
 
   return (
     <div className="relative overflow-hidden pt-[3%] pb-[5%]">
-      <section className="relative container max-[575px]:px-[12px]">
+      <section
+        id="pricingSection"
+        className="relative container max-[575px]:px-[12px]"
+      >
         <div className="absolute top-0 z-10 max-[767px]:hidden text-primary upright-text max-[991px]:text-[24px] max-[1199px]:text-[32px] min-[1200px]:text-[44px] max-[992px]:top-[0px] max-[1199px]:top-[6%] min-[1200px]:top-[6%] min-[1400px]:top-[7%] leading-[35px]">
           月次
         </div>

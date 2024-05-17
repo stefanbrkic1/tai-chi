@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
 import AboutPage from "../pages/AboutPage";
 import ProgramsPage from "../pages/ProgramsPage";
-import PricingPage from "../pages/PricingPage";
 import GalleryPage from "../pages/GalleryPage";
 import BlogPage from "../pages/BlogPage";
 import ContactPage from "../pages/ContactPage";
@@ -24,10 +23,6 @@ function Router() {
     {
       path: "/programs",
       element: <ProgramsPage />,
-    },
-    {
-      path: "/pricing",
-      element: <PricingPage />,
     },
     {
       path: "/gallery",
