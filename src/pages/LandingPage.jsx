@@ -146,7 +146,7 @@ function LandingPage() {
               className="opacity-[20%] animate-rotate"
             />
           </div>
-          <h2 className="font-tsushima text-secondary text-center text-[24px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[10px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
+          <h2 className="font-tsushima text-secondary text-center text-[28px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[10px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
             WHO <span className="text-primary">WE ARE</span>
           </h2>
           <div className="text-center font-generalsans text-secondary max-[575px]:text-[14px] max-[767px]:text-[15px] min-[768px]:text-[16px] flex flex-col max-[991px]:gap-[15px] min-[992px]:gap-[20px] mb-[30px]">
@@ -302,7 +302,7 @@ function LandingPage() {
             className="opacity-[20%] animate-rotate"
           />
         </div>
-        <h2 className="font-tsushima text-secondary text-center text-[24px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[25px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
+        <h2 className="font-tsushima text-secondary text-center text-[28px] min-[768px]:text-[28px] min-[992px]:text-[36px] min-[1200px]:text-[52px] min-[1400px]:text-[62px] max-[991px]:mb-[25px] min-[1200px]:mb-[12px] min-[1400px]:mb-[24px]">
           WHAT WE <span className="text-primary">OFFER</span>
         </h2>
         <div className="container">
