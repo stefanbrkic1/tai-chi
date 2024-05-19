@@ -56,7 +56,7 @@ function AboutPage() {
         <img
           src="/assets/style-elements/star-2.svg"
           alt="star"
-          className="absolute z-10 right-[-65px] max-[767px]:bottom-[0px] min-[768px]:bottom-[0px] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
+          className="absolute z-10 right-[-65px] max-[575px]:bottom-[80px] max-[767px]:bottom-[0px] min-[768px]:bottom-[0px] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
         />
       </div>
 
