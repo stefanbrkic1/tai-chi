@@ -10,7 +10,7 @@ function InstagramCaroussel() {
     infinite: true,
     speed: 500,
     centerMode: true,
-    slidesToScroll: 6,
+    slidesToScroll: 1,
     slidesToShow: 6,
     autoplay: true,
     autoplaySpeed: 1200,
@@ -19,21 +19,19 @@ function InstagramCaroussel() {
         breakpoint: 1399,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1199,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 820,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+
           centerMode: false,
         },
       },
@@ -41,7 +39,6 @@ function InstagramCaroussel() {
         breakpoint: 575,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           centerMode: false,
         },
       },
