@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 function PrivateSession() {
   return (
     <>
@@ -38,8 +36,6 @@ function PrivateSession() {
           className="absolute z-10 left-[-65px] max-[991px]:bottom-[0px] max-[1199px]:bottom-[0px] max-[1399px]:bottom-[0px] bottom-[0px] animate-rotate max-[767px]:w-[100px] min-[768px]:w-[130px] min-[992px]:w-[130px] min-[1200px]:w-[150px] min-[1400px]:w-[180px]"
         />
       </div>
-
-      <Footer />
     </>
   );
 }

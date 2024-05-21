@@ -71,7 +71,8 @@ function Articles() {
       <Slider ref={sliderRef} {...settings} className="overflow-x-hidden">
         <div className="relative group transition-all duration-300 cursor-pointer bg-white">
           <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-1.webp')] bg-cover">
-            <div className="absolute max-[575px]:hidden group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-contain articles-mask"></div>
+            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
           </div>
           <div className="font-generalsans p-5 transition-all duration-300">
             <h4 className="group-hover:text-primary">
@@ -90,7 +91,8 @@ function Articles() {
 
         <div className="relative group transition-all duration-300 cursor-pointer bg-white">
           <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-2.webp')] bg-cover">
-            <div className="absolute  max-[575px]:hidden group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-contain articles-mask"></div>
+            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
           </div>
           <div className="font-generalsans p-5 transition-all duration-300">
             <h4 className="group-hover:text-primary">

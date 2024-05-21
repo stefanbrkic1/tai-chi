@@ -125,16 +125,16 @@ function ExplorePrograms() {
         </div>
       </Slider>
 
-      <div className="flex justify-center items-center gap-5 mt-8">
+      <div className="min-[768px]:hidden flex justify-center items-center gap-5 mt-8">
         <div
           onClick={() => sliderRef.current.slickPrev()}
-          className="min-[768px]:hidden group text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
+          className="group text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
         >
           <div className="w-[20px] h-[20px] bg-[url('/assets/style-elements/arrow-right-solid-black.svg')] group-hover:bg-[url('/assets/style-elements/arrow-right-solid.svg')] rotate-180 bg-contain bg-center bg-no-repeat"></div>
         </div>
         <div
           onClick={() => sliderRef.current.slickNext()}
-          className="min-[768px]:hidden group text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
+          className="group text-[18px] rounded-full text-secondary hover:bg-primary hover:text-white cursor-pointer transition-all duration-[200ms] bg-[#D9D9D9] w-[50px] h-[50px] flex justify-center items-center leading-[0px]"
         >
           <div className="w-[20px] h-[20px] bg-[url('/assets/style-elements/arrow-right-solid-black.svg')] group-hover:bg-[url('/assets/style-elements/arrow-right-solid.svg')] bg-contain bg-center bg-no-repeat"></div>
         </div>

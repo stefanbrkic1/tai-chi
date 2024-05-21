@@ -112,71 +112,71 @@ function GalleryPage() {
                     style={{ backgroundImage: `url('${group.img1}')` }}
                     className={`relative bg-cover bg-center max-[991px]:col-span-2 col-span-4 row-span-2`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img2}')` }}
                     className={`relative bg-cover bg-center`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img3}')` }}
                     className={`relative bg-cover bg-center`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img4}')` }}
                     className={`relative bg-cover bg-center`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img5}')` }}
                     className={`relative bg-cover bg-center`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img6}')` }}
                     className={`relative bg-cover bg-center`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img7}')` }}
                     className={`relative bg-cover bg-center`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img8}')` }}
                     className={`relative bg-cover bg-center row-start-5`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img9}')` }}
                     className={`relative bg-cover bg-center row-start-5`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                   <div
                     style={{ backgroundImage: `url('${group.img10}')` }}
                     className={`relative bg-cover bg-center max-[991px]:col-start-1 col-start-3 row-span-2 col-span-2`}
                   >
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover mask-calc top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                    <div className="absolute bg-[url('/assets/style-elements/mask-3-1.webp')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                   </div>
                 </div>
               );
