@@ -60,10 +60,10 @@ function Footer() {
 
           <div className="flex items-center gap-6 mt-5 font-generalsans text-white max-[575px]:text-[13px] max-[1199px]:text-[14px] min-[1200px]:text-[16px] text-nowrap">
             <Link to={"/"}>Home</Link>
-            <Link to={"/"}>Programs</Link>
-            <Link to={"/"}>Contact Us</Link>
-            <Link to={"/"}>About Us</Link>
-            <Link to={"/"}>Blogs</Link>
+            <Link to={"/programs"}>Programs</Link>
+            <Link to={"/contact"}>Contact Us</Link>
+            <Link to={"/about"}>About Us</Link>
+            <Link to={"/blogs"}>Blogs</Link>
           </div>
 
           <div className="min-[768px]:hidden flex items-center gap-6 mt-5">
