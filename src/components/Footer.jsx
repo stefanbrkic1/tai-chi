@@ -90,10 +90,14 @@ function Footer() {
             Copyright © 2023. All rights reserved
           </div>
           <div className="flex items-center max-[991px]:gap-5 gap-10">
-            <div className="hover:text-white">Privacy Policy</div>
-            <div className="hover:text-white">Cookie Policy</div>
-            <div className="hover:text-white">Refund Policy</div>
-            <div className="hover:text-white">Terms of Policy</div>
+            <div className="hover:text-white cursor-pointer">
+              Privacy Policy
+            </div>
+            <div className="hover:text-white cursor-pointer">Cookie Policy</div>
+            <div className="hover:text-white cursor-pointer">Refund Policy</div>
+            <div className="hover:text-white cursor-pointer">
+              Terms of Policy
+            </div>
           </div>
         </div>
       </div>
