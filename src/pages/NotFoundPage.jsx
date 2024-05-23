@@ -7,6 +7,7 @@ function NotFoundPage() {
 
     return () => (document.body.style.overflow = "auto");
   }, []);
+
   return (
     <>
       <div className="absolute w-full h-full bg-[url('/assets/img/transformation-2.webp')] bg-center bg-cover"></div>
@@ -73,16 +74,14 @@ function NotFoundPage() {
             className="max-[991px]:hidden max-[1070px]:max-w-[410px] max-[1199px]:max-w-[450px] absolute flip-vertical"
           />
           <div className="absolute left-[50%] translate-x-[-50%] pt-[13px]">
-            <div className="">
-              <Link to={"/"}>
-                <img
-                  src="/assets/style-elements/logo.svg"
-                  alt="logo"
-                  width="119"
-                  height="21"
-                />
-              </Link>
-            </div>
+            <Link to={"/"}>
+              <img
+                src="/assets/style-elements/logo.svg"
+                alt="logo"
+                width="119"
+                height="21"
+              />
+            </Link>
           </div>
           <img
             src="/assets/style-elements/header-line.svg"
