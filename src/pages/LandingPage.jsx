@@ -6,8 +6,13 @@ import Articles from "../components/Articles";
 import InstagramCaroussel from "../components/InstagramCaroussel";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function LandingPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar />

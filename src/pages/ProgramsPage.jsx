@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import PrivateSession from "../components/PrivateSession";
 
 function ProgramsPage() {
@@ -41,6 +41,11 @@ function ProgramsPage() {
       },
     ],
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar />
