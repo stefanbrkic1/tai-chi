@@ -1,9 +1,20 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import fetchNews from "../services/newsApi";
+import { v4 as uuidv4 } from "uuid";
+import formatDate from "../utils/formatDate";
 
 function Articles() {
+  const [newsData, setNewsData] = useState([]);
+
+  useEffect(() => {
+    fetchNews()
+      .then((data) => setNewsData(data))
+      .catch((error) => console.error(error));
+  }, []);
+
   const sliderRef = useRef(null);
 
   const settings = {
@@ -11,7 +22,7 @@ function Articles() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -69,44 +80,38 @@ function Articles() {
         </div>
       </div>
       <Slider ref={sliderRef} {...settings} className="overflow-x-hidden">
-        <div className="relative group transition-all duration-300 cursor-pointer bg-white">
-          <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-1.webp')] bg-cover">
-            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
-          </div>
-          <div className="font-generalsans p-5 transition-all duration-300">
-            <h4 className="group-hover:text-primary">
-              Exploring the Foundations of Tai Chi: A Journey to Inner Harmony
-            </h4>
-            <div className="flex justify-between items-center mt-4">
-              <div className="group-hover:text-secondary text-primary">
-                Read Now
-              </div>
-              <div className="text-[#AEAEAE]">June 14th, 2023</div>
-            </div>
-          </div>
+        {newsData.length > 0 &&
+          newsData.map((article) => {
+            return (
+              <a
+                href={article.url}
+                key={uuidv4()}
+                target="_blank"
+                className="relative group transition-all duration-300 cursor-pointer bg-white"
+              >
+                <div
+                  style={{ backgroundImage: `url(${article.image})` }}
+                  className={`relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-cover bg-primary`}
+                >
+                  <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
+                  <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
+                </div>
+                <div className="font-generalsans p-5 transition-all duration-300 max-[575px]:h-[130px] max-[767px]:h-[240px] h-[160px] flex flex-col justify-between">
+                  <h4 className="group-hover:text-primary">{article.title}</h4>
+                  <div className="flex min-[576px]:flex-col min-[576px]:items-start min-[992px]:flex-row min-[992px]:items-center justify-between items-center mt-4">
+                    <div className="group-hover:text-secondary text-primary">
+                      Read Now
+                    </div>
+                    <div className="text-[#AEAEAE]">
+                      {formatDate(article.publishedAt)}
+                    </div>
+                  </div>
+                </div>
 
-          <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-        </div>
-
-        <div className="relative group transition-all duration-300 cursor-pointer bg-white">
-          <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-2.webp')] bg-cover">
-            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
-            <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
-          </div>
-          <div className="font-generalsans p-5 transition-all duration-300">
-            <h4 className="group-hover:text-primary">
-              Exploring the Foundations of Tai Chi: A Journey to Inner Harmony
-            </h4>
-            <div className="flex justify-between items-center mt-4">
-              <div className="group-hover:text-secondary text-primary">
-                Read Now
-              </div>
-              <div className="text-[#AEAEAE]">June 14th, 2023</div>
-            </div>
-          </div>
-          <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-        </div>
+                <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
+              </a>
+            );
+          })}
       </Slider>
       <div className="flex justify-center items-center gap-5 mt-8">
         <div

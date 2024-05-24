@@ -22,8 +22,6 @@ async function fetchImages(page) {
       throw new Error("MESSAGE: No more images left in gallery");
     }
 
-    console.log(data);
-
     const modifiedData = {
       img1: data.results[0].urls.regular,
       img2: data.results[1].urls.regular,
