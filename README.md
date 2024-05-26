@@ -18,10 +18,9 @@
 <br>
 <!-- ABOUT THE PROJECT -->
 
-## Preview
+## Landing Page
 
-![Preview](./src/assets/img/screenshots/home-page.png)
-![Preview](./src/assets/img/screenshots/product-page.png)
+![Preview](/assets/img/landing-page.png)
 
 > **Note**
 >
