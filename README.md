@@ -30,7 +30,7 @@
 
 ## Tai Chi | Website for Tai Chi Academy
 
-Embark on a shopping adventure like never before with our all-encompassing e-commerce website! Discover a treasure trove of products spanning diverse categories, from cutting-edge electronics and stylish fashion to essential home goods and unique curiosities. Our platform is your go-to destination for all your shopping desires, offering a vast selection that caters to every taste and preference. Navigate through a user-friendly interface, explore trending items, and enjoy the convenience of doorstep delivery. Unleash the possibilities of online shopping with us, where the world's offerings converge for your ultimate convenience. Shop, explore, and indulge in a seamless online retail experience with our comprehensive e-commerce platform! 🛍️✨🌐
+This project is a responsive website for a Tai Chi Academy, built using ReactJS. It features seamless navigation with React Routing and dynamic route paths for efficient URL management. The site integrates a News API to provide the latest updates about Tai Chi and uses the Unsplash API to create a dynamic gallery of Tai Chi-related images. The responsive design ensures the website is accessible and visually appealing on all devices, offering users an engaging and informative online experience.
 
 <br>
 
@@ -55,17 +55,17 @@ Embark on a shopping adventure like never before with our all-encompassing e-com
 
 ## Features
 
-- **Popular Picks**: Explore a curated selection of trending and popular items, ensuring you stay ahead of the latest trends and hottest products.
+- **React Routing**: Implemented for seamless navigation across different pages.
 
-- **Related Products**: Enhance your shopping experience with personalized recommendations for related items based on your preferences, creating a seamless and enjoyable browsing journey.
+- **Dynamic Route Path**: Allows for flexible and efficient URL management.
 
-- **Product Filtering**: Easily find what you're looking for with advanced product filtering categories.
+- **News Integration**: Integrated with a News API to provide the latest news about Tai Chi.
 
-- **Efficient Shopping Cart**: Seamlessly manage your purchases with an intuitive shopping cart feature. Add, remove, and review items effortlessly before making your final decisions.
+- **Gallery**: Utilizes the Unsplash API to display a dynamic gallery of Tai Chi-related images.
 
 - **Cross-Browser Compatibility**: Ensure smooth performance across various web browsers.
 
-- **Responsive Design**: The game adapts to different screen sizes, making it playable on various devices, including desktop and mobile.
+- **Responsive Design**: Ensures the website is accessible and visually appealing on all devices, from desktops to mobile phones.
 
 - **Code Formatting Guidelines**: The project adheres to coding standards and maintains code consistency by implementing ESLint along with Prettier for code formatting.
 
