@@ -9,6 +9,7 @@ import BlogPage from "../pages/BlogPage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import ComingSoonPage from "../pages/ComingSoonPage";
+import Blog from "../pages/Blog";
 
 function Router() {
   const router = createBrowserRouter([
@@ -31,6 +32,10 @@ function Router() {
     {
       path: "/blog",
       element: <BlogPage />,
+    },
+    {
+      path: "/blog-details/:blogId",
+      element: <Blog />,
     },
     {
       path: "/contact",

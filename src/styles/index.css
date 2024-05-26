@@ -216,6 +216,11 @@
     clip-path: polygon(0 0, 97% 0%, 100% 2%, 100% 100%, 3% 100%, 0 98%);
   }
 
+  .clip-blog {
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 98% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 85%, 98% 100%, 0 100%, 0 0);
+  }
+
   .flip-vertical {
     -moz-transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
@@ -232,6 +237,10 @@
     transform: scaleX(-1);
     -ms-filter: fliph; /*IE*/
     filter: fliph; /*IE*/
+  }
+
+  .border-bottom-opacity {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 }
 

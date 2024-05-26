@@ -98,7 +98,10 @@ function BlogPage() {
           LATEST BLOGS <span className="text-primary">FOR YOU</span>
         </h3>
         <Slider ref={sliderRefOne} {...settings} className="overflow-x-hidden">
-          <div className="relative group transition-all duration-300 cursor-pointer bg-white">
+          <Link
+            to={"/blog-details/1"}
+            className="relative group transition-all duration-300 cursor-pointer bg-white"
+          >
             <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-2.webp')] bg-cover">
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
@@ -116,10 +119,13 @@ function BlogPage() {
             </div>
 
             <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-          </div>
+          </Link>
 
-          <div className="relative group transition-all duration-300 cursor-pointer bg-white">
-            <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-3.webp')] bg-cover">
+          <Link
+            to={"/blog-details/2"}
+            className="relative group transition-all duration-300 cursor-pointer bg-white"
+          >
+            <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/blogs/blog-2.jpg')] bg-cover">
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
             </div>
@@ -135,10 +141,13 @@ function BlogPage() {
               </div>
             </div>
             <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-          </div>
+          </Link>
 
-          <div className="relative group transition-all duration-300 cursor-pointer bg-white">
-            <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-4.webp')] bg-cover">
+          <Link
+            to={"/blog-details/3"}
+            className="relative group transition-all duration-300 cursor-pointer bg-white"
+          >
+            <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/blogs/blog-3.jpg')] bg-cover">
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
             </div>
@@ -154,7 +163,7 @@ function BlogPage() {
               </div>
             </div>
             <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-          </div>
+          </Link>
         </Slider>
 
         <div className="min-[1200px]:hidden flex justify-center items-center gap-5 mt-8">
@@ -240,14 +249,17 @@ function BlogPage() {
           LATEST BLOGS <span className="text-primary">FOR YOU</span>
         </h3>
         <Slider ref={sliderRefTwo} {...settings} className="overflow-x-hidden">
-          <div className="relative group transition-all duration-300 cursor-pointer bg-white">
-            <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-5.webp')] bg-cover">
+          <Link
+            to={"/blog-details/4"}
+            className="relative group transition-all duration-300 cursor-pointer bg-white"
+          >
+            <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/blogs/blog-4.jpg')] bg-cover">
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
             </div>
             <div className="font-generalsans p-5 transition-all duration-300">
               <h4 className="group-hover:text-primary">
-                Exploring the Foundations of Tai Chi: A Journey to Inner Harmony
+                Learning the Foundations of Tai Chi: A Journey to Inner Harmony
               </h4>
               <div className="flex justify-between items-center mt-4">
                 <div className="group-hover:text-secondary text-primary">
@@ -258,16 +270,19 @@ function BlogPage() {
             </div>
 
             <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-          </div>
+          </Link>
 
-          <div className="relative group transition-all duration-300 cursor-pointer bg-white">
+          <Link
+            to={"/blog-details/5"}
+            className="relative group transition-all duration-300 cursor-pointer bg-white"
+          >
             <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-6.webp')] bg-cover">
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
             </div>
             <div className="font-generalsans p-5 transition-all duration-300">
               <h4 className="group-hover:text-primary">
-                The Art of Balance: How Tai Chi Enhances Your Physical Stability
+                Brief History of Tai Chi: The First Masters of Tai Chi
               </h4>
               <div className="flex justify-between items-center mt-4">
                 <div className="group-hover:text-secondary text-primary">
@@ -277,9 +292,12 @@ function BlogPage() {
               </div>
             </div>
             <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-          </div>
+          </Link>
 
-          <div className="relative group transition-all duration-300 cursor-pointer bg-white">
+          <Link
+            to={"/blog-details/6"}
+            className="relative group transition-all duration-300 cursor-pointer bg-white"
+          >
             <div className="relative max-[575px]:h-[325px] max-[991px]:h-[172px] max-[1199px]:h-[230px] max-[1399px]:h-[258px] h-[275px] bg-[url('/assets/img/articles/articles-7.webp')] bg-cover">
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
               <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
@@ -296,7 +314,7 @@ function BlogPage() {
               </div>
             </div>
             <div className="absolute max-[575px]:hidden top-0 right-[-10px] h-full w-[1px] bg-[#2d2d2d26]"></div>
-          </div>
+          </Link>
         </Slider>
 
         <div className="min-[1200px]:hidden flex justify-center items-center gap-5 mt-8">
