@@ -96,7 +96,7 @@ function Articles() {
                   <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%]"></div>
                   <div className="absolute group-hover:opacity-0 transition-all duration-300 bg-[url('/assets/style-elements/mask.svg')] bg-cover top-[-1px] left-[-1px] w-[101%] h-[101%] rotate-180"></div>
                 </div>
-                <div className="font-generalsans p-5 transition-all duration-300 max-[575px]:h-[130px] max-[767px]:h-[240px] h-[160px] flex flex-col justify-between">
+                <div className="font-generalsans p-5 transition-all duration-300 max-[575px]:h-[130px] max-[767px]:h-[240px] max-[991px]:h-[230px] h-[160px] flex flex-col justify-between">
                   <h4 className="group-hover:text-primary">{article.title}</h4>
                   <div className="flex min-[576px]:flex-col min-[576px]:items-start min-[992px]:flex-row min-[992px]:items-center justify-between items-center mt-4">
                     <div className="group-hover:text-secondary text-primary">
