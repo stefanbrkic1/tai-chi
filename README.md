@@ -38,7 +38,7 @@ This project is a responsive website for a Tai Chi Academy, built using ReactJS.
 
 <div align=center>
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)&nbsp;&nbsp;![JavaScript](https://img.shields.io/badge/Javascript%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;&nbsp;![Vite](https://img.shields.io/badge/vite-646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) &nbsp;&nbsp;![React](https://img.shields.io/badge/react-0D6D8C?style=for-the-badge&logo=react&logoColor=white) &nbsp;&nbsp;![Tailwind](https://img.shields.io/badge/tailwind-764ABC?style=for-the-badge&logo=tailwind&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)&nbsp;&nbsp;![JavaScript](https://img.shields.io/badge/Javascript%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;&nbsp;![Vite](https://img.shields.io/badge/vite-646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) &nbsp;&nbsp;![React](https://img.shields.io/badge/react-0D6D8C?style=for-the-badge&logo=react&logoColor=white) &nbsp;&nbsp;![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=Tailwind&logoColor=white)
 
 <br>
 </div>
