@@ -76,3 +76,4 @@ This project is a responsive website for a Tai Chi Academy, built using ReactJS.
 👤 **stefanbrkic1**
 
 - GitHub: [stefanbrkic1](https://github.com/stefanbrkic1)
+- LinkedIn: [stefanbrkic1](https://www.linkedin.com/in/stefan-brkic-4014012a3/)
