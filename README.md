@@ -2,7 +2,7 @@
 <br>
 
 <div align="center">
-<img src="/assets/style-elements/logo.svg" alt="logo" width="270">
+<img src="./src/assets/img/github-logo.jpg" alt="logo" width="270">
 <br>
 <br>
   <p>
