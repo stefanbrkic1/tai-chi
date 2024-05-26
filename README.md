@@ -20,7 +20,7 @@
 
 ## Landing Page
 
-![Preview](../src/assets/img/landing-page.png)
+![LandingPage](./src/assets/img/landing-page.png)
 
 > **Note**
 >
