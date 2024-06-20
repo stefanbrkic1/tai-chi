@@ -18,9 +18,10 @@
 <br>
 <!-- ABOUT THE PROJECT -->
 
-## Landing Page
+## Preview
 
-![LandingPage](./src/assets/img/landing-page.png)
+![Preview](</assets/img/readme/GitHub(MainPage).jpg>)
+![Preview](</assets/img/readme/GitHub(PHONES).jpg>)
 
 > **Note**
 >
