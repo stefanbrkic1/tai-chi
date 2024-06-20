@@ -20,8 +20,8 @@
 
 ## Preview
 
-![Preview](</assets/img/readme/GitHub(MainPage).jpg>)
-![Preview](</assets/img/readme/GitHub(PHONES).jpg>)
+![Preview](<public/assets/img/readme/GitHub(MainPage).jpg>)
+![Preview](<public/assets/img/readme/GitHub(PHONES).jpg>)
 
 > **Note**
 >
